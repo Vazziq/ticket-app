@@ -33,7 +33,7 @@
             <div class="d-flex justify-content-center mb-4">
               <button routerLink="home" (click)="onSubmit()" type="button" class="btn btn-primary">Zaloguj</button>
             </div>
-  
+
             <div class="strike">
               <span>
                 <h5>Albo</h5>
@@ -43,8 +43,8 @@
             <!-- ID Card -->
             <!-- <div class="d-flex justify-content-start ms-5 mt-4">
                 <i type="button" class="fas fa-id-card-alt fa-5x" style="color: #1266F1"></i> -->
-            <button (click)="onBadge()" type="button"
-              class="btn d-flex justify-content-center mx-auto" title="Kliknij aby zalogować">
+            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="onBadge()" type="button"
+              class="btn d-flex justify-content-center mx-auto my-auto" title="Kliknij aby zalogować">
               <div class="d-flex justify-content-center" style="color: #1266F1">
                 <i class="fas fa-id-card-alt fa-5x me-4"></i>
                 <div class="align-self-center">
@@ -54,6 +54,26 @@
                 </div>
               </div>
             </button>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body mx-auto">
+                    <h2>Przyłuż badge do czytnika</h2>
+                    <div class="spinner-border text-primary mt-4 d-flex justify-content-center mx-auto" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    &nbsp;
+                  </div>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
