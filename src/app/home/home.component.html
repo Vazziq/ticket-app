@@ -1,132 +1,55 @@
-<!-- <nav class="navbar navbar-expand-lg bg-light">
-  <div class="d-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="../assets/bwi-logo.png" alt="" width="" class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="containter-fluid">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav row">
-          <li class="nav-item me-2 col">
-            <a class="nav-link active" aria-current="page" href="">jeden</a>
-          </li>
-          <li class="nav-item me-2 col">
-            <a class="nav-link active" aria-current="page" href=""><i class="fas fa-plus-circle"></i></a>
-          </li>
-          <li class="nav-item me-2 col">
-            <a class="nav-link active" aria-current="page" href="">Logout <i class="fas fa-sign-out-alt"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-end">
-        <form class="d-flex col-4">
-          <input class="form-control" type="search" placeholder="Szukaj" aria-label="Search">
-          <button class="btn btn-primary ms-2" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
-      </div>
-      <span class="d-flex justify-content-end nav-item col mt-2">
-        <button class="btn btn-outline-primary">
-          <a>Logout <i class="fas fa-sign-out-alt"></i></a>
-        </button>
-      </span>
-    </div>
-  </div>
-</nav>
- -->
+<navbar></navbar>
+<!-- Background Image -->
+<!-- <div class="bg-image mask d-flex align-items-center" style="background-image: url(../assets/bwi_tlo.jpg);"></div> -->
+<div id="intro" class="bg-image shadow-2-strong" style="background-image: url(../assets/bwi_tlo.jpg);">
+  <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- Ticket -->
+<div class="card mx-auto" style="width: 60%;">
+  <div class="card-body">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="../assets/bwi-logo.png" alt="" width="">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Dodaj ticket</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Przeglądaj tickety</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="container-fluid">
-          <div class="row d-flex justify-content-end">
-            <form class="d-flex col-3">
-              <input class="form-control" type="search" placeholder="Szukaj" aria-label="Search">
-              <button class="btn btn-primary ms-2" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
-          </div>
-          <span class="d-flex justify-content-end nav-item col mt-2">
-            <button routerLink="" class="btn btn-outline-primary" type="button">
-              <a>Wyloguj <i class="fas fa-sign-out-alt"></i></a>
-            </button>
-          </span>
+      <div class="input-group d-flex justify-content-center mx-auto mb-3 row">
+        <div class="px-0 me-1 col-2">
+          <label class="input-group-text d-flex justify-content-center" for="inputGroupSelect01">Kategoria</label>
+        </div>
+        <div class="px-0 me-1 col-7">
+          <select class="form-select" id="inputGroupSelect01">
+            <option disabled hidden selected>Wybierz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="px-0 col">
+          <select class="form-select" id="inputGroupSelect02">
+            <option disabled hidden selected>Priorytet</option>
+            <option value="1">Wysoki</option>
+            <option value="2">Średni</option>
+            <option value="3">Niski</option>
+          </select>
         </div>
       </div>
-    </div>
-  </nav>
-
-  <!-- Ticket -->
-  <div class="card mt-5 mx-auto" style="width: 60%;">
-    <div class="card-body">
-      <div class="container-fluid">
-        <div class="input-group d-flex justify-content-center mx-auto mb-3 row">
-          <div class="px-0 col-2">
-            <label class="input-group-text d-flex justify-content-center" for="inputGroupSelect01">Temat</label>
-          </div>
-          <div class="px-0 col-7">
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Wybierz...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="px-0 col-3">
-            <select class="form-select" id="inputGroupSelect02">
-              <option selected>Priorytet</option>
-              <option value="1">Wysoki</option>
-              <option value="2">Średni</option>
-              <option value="3">Niski</option>
-            </select>
-          </div>
-        </div>
-        <div class="input-group d-flex justify-content-center mx-auto my-3 row">
-          <input type="file" class="form-control col" id="inputGroupFile02">
-          <label class="input-group-text d-flex justify-content-center col-2" for="inputGroupFile02">Upload</label>
-        </div>
-        <div class="form-floating">
-          <textarea class="form-control" placeholder="Komentarz" id="floatingTextarea" style="height: 150px"></textarea>
-          <label for="floatingTextarea">Komentarz</label>
-        </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="addon-wrapping">Temat</span>
+        <input type="text" class="form-control" placeholder="Wpisz temat">
+      </div>
+      <div class="input-group mb-3">
+        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+          aria-label="Upload">
+        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+      </div>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Komentarz" id="floatingTextarea" style="height: 150px"></textarea>
+        <label for="floatingTextarea">Komentarz</label>
+      </div>
+      <div class="text-center mt-3 d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-lg btn-primary">Wyślij</button>
       </div>
     </div>
   </div>
-</body>
+</div>
+
+</div>
+</div>
+
+

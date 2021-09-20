@@ -1,0 +1,16 @@
+/* .bg-image {
+  background-size: cover;
+  height:83.2vh;
+  filter: brightness(20%);
+} */
+
+#intro {
+  /* The image used */
+  /* background-image: url(""); */
+  /* Full height */
+  height: 83vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
