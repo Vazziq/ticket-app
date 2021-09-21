@@ -1,26 +1,28 @@
 <navbar></navbar>
-<!-- Background Image -->
-<!-- <div class="bg-image mask d-flex align-items-center" style="background-image: url(../assets/bwi_tlo.jpg);"></div> -->
-<div id="intro" class="bg-image shadow-2-strong" style="background-image: url(../assets/bwi_tlo.jpg);">
-  <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
 
 <!-- Ticket -->
-<div class="card mx-auto" style="width: 60%;">
+<div class="card mx-auto mt-5" style="width: 70%;">
   <div class="card-body">
     <div class="container-fluid">
       <div class="input-group d-flex justify-content-center mx-auto mb-3 row">
-        <div class="px-0 me-1 col-2">
+        <div class="px-0 col-2">
           <label class="input-group-text d-flex justify-content-center" for="inputGroupSelect01">Kategoria</label>
         </div>
-        <div class="px-0 me-1 col-7">
+        <div class="px-0 me-1 col">
           <select class="form-select" id="inputGroupSelect01">
             <option disabled hidden selected>Wybierz...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">{{ t1 }}</option>
+            <option value="2">{{ t2 }}</option>
+            <option value="3">{{ t3 }}</option>
+            <option value="4">{{ t4 }}</option>
+            <option value="5">{{ t5 }}</option>
+            <option value="6">{{ t6 }}</option>
+            <option value="7">{{ t7 }}</option>
+            <option value="8">{{ t8 }}</option>
+            <option value="9">{{ t9 }}</option>
           </select>
         </div>
-        <div class="px-0 col">
+        <div class="px-0 col-2">
           <select class="form-select" id="inputGroupSelect02">
             <option disabled hidden selected>Priorytet</option>
             <option value="1">Wysoki</option>
@@ -31,7 +33,7 @@
       </div>
       <div class="input-group mb-3">
         <span class="input-group-text" id="addon-wrapping">Temat</span>
-        <input type="text" class="form-control" placeholder="Wpisz temat">
+        <input type="text" class="form-control" placeholder="Wpisz temat" id="disabledInput">
       </div>
       <div class="input-group mb-3">
         <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
@@ -48,8 +50,3 @@
     </div>
   </div>
 </div>
-
-</div>
-</div>
-
-
